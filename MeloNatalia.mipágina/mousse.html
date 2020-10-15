@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 70px 1200px 70px;
+            grid-row: auto;
+            grid-template-areas: 
+            "nav nav nav" 
+            ". content ."
+            "foot foot foot";
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: content;
+            display: grid;
+            grid-template-columns:550px 650px;
+            grid-row: auto;
+            grid-template-areas: 
+            "t t"
+            "wh wh"
+            "t1 t1"
+            "Bomba tbomba"
+            "texto2 texto2"
+            "tabla tabla"
+            "t3 t3"
+            "imagenes imagenes"
+            
+        }
+        #imagenes{
+          display: grid;
+            grid-template-columns:400px 400px 400px;
+            grid-row: auto;
+            grid-template-areas: 
+            "mturron charl limon";
+
+        }
+        
+        #texto2{
+          grid-area: texto2;
+        }
+        #wh{
+          grid-area: wh;
+        }
+        footer{
+            grid-area: foot;
+            background-color: gainsboro;
+        }
+        #tbomba{
+          grid-area: tbomba;
+        }
+        #Bomba{
+          grid-area: Bomba;
+          width: 500px;
+        }
+        #Mturron{
+          grid-area: mturron;
+          width: 300px;
+        }
+        #t1{
+          grid-area: t1;
+        }
+        #charlotte{
+          grid-area: charl;
+          width: 410px;
+        }
+        #limon{
+          grid-area: limon;
+          width: 450px;
+        }
+        #t{
+           grid-area: t;
+        }
+        #tabla{
+          grid-area: tabla;
+        }
+        #t3{
+          grid-area: t3;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tartas.html">Pie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tortas.html">Tortas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mousse.html">Mousse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chefs.html">Chefs</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <main>
+          <h1 id="t">Mousse</h1>
+          <div id="wh">
+          <h2 id="t2">¿Que es?</h2>
+          <p> 
+            Mousse, viene del frances y quere decir espuma. su contextura puede llegar a ser firme, pero nunga rígida, o , como normalmente es encontrada, cremosa y llena de aire. Este aspecto se puede dar combinando gelatina o llemas con chocolate. Los sabores más reconocidos son de chocolate, frutos rojos o del bosque, menta, vainilla o limón.
+          </p>
+          </div>
+
+
+      
+            <h2 id="t1">Receta del día</h2>
+            <div id="tbomba">
+              <h3>Bomba Alaska</h3>
+              
+              <p>
+                Para empezar haremos el pan de españa. Para hacerlo mezclaremos las llemas de los huevos con el azucar aproximadamente por 10 minutos para que tomen volumen y aire. Al pasar este tiempo incorporaremos con una espatula delicadamente la harina hasta que la última este muy bien incorporada y meteremos en el horno a 180 grados de 15-20 minutos, en un molde que tenga la misma amplitud del bool donde pondremos los mousses. Proseguiremos con la preparación de la crema inglesa. En una olla pondremos la leche con el contenido de la astilla de vinilla a calentar, y mientrastanto masclaremos a mano las llemas de huevo tamizas y el azucar de la misma forma tamizado. Para que la crema no se queme pondremos primero una parte de la leche caliente en las llemas y posteriosmente incorporaremos esta nueva mezcla en la olla con el resto de leche caliente. Batiremos nuevamente y pondremos la olla nuevamente a fuego medio-bajo hasta que  al untar la parte tracera de una cuchara de crema y trazar un caamino con el dedo, este camino no se desbarate. 
+          
+              </p>
+
+            </div>
+            <p id="texto2">
+              Continuaremos haciendo la mermelada de mora donde. Pondremos en una olla, a fuego medio-bajo,las fresas cortadas, azucar y el zumo del limon hasta que las fresas se desagan casi totalmente. Mientras se enfría empezaremos con los mousses. Para el primero (que será de chocolate) mezclaremos la crema inglesa con el chocolate derretido y la gelatina ,anteriormente hidratada. Cuando tengamos una mezcla uniforme y liza, adicionaremos poco a poco la crema chantilly (que haremos mezclando la creme de leche fresca hasta que se vuelva firme). Pondremos nuertra mezcla en el bool  que tendrá un plástico que lo cubre todo y llevaremos ar refrigerador.mientras se endurece haremos el mousse de fresa. Mezclaremos de la misma forma la  crema inglesa, la mermelada, el chocolate blanco derretido y la geletina hidratada ; de ultimas incorporamos la crema de leche batida y ponemos en el bool que ya tiene el mousse de chocolate bien estructurado y llevamos al refrigerador. Para la última mousse haremos el mismo procedimiento usando solamente crema inglesa, gelatina hidratada y la chantilly, y finalmente volvemos a colocar en el refrigerador esta vez dejándolo por aproximadamente 9 horas. Tras haber esperado todo ese tiempo prosederemos a desmoldar utilizando una tabla y el  pan de españa que pondremos encima del bool y  voltearemos( antes debemos cortar la parte de encima de nuestro pan de españa de tal form que quede lizo). Ahora para decorar haremos el meregngue z. Mezclaremos levemente claras y azucar, llevaremos a baño maría a fuego bajo hasta que el azucar de diluya completamente. Luego en la batidora mezclaremos aproximadamentepor unos 10-15 minutos, hasta que quede brillante y con picos. Decoraremos  con el merengue suizo. (la cantidad de los ingredientes se encuentran el la  tabla inferior)
+
+            </p>
+<Table id="tabla" class="table conclusion">
+              <tr>
+                <th>Pan de españa</th>
+                <th>Crema inglesa</th>
+                <th>Mermelada de fresas</th>
+                <th>Mousse de fresas</th>  
+                <th>Mousse de vainilla</th>
+                <th>Mousse de Chocolate</th>
+                <th>Merengue Suizo</th>
+                <th>Plato de Chocolate</th>
+                
+            </tr>
+            <tr>
+               <td>100g huevos</td>
+               <td>825g leche</td>
+               <td>600g mora</td> 
+               <td>240g crema inglesa</td>
+               <td>12g gelatina sinsabor</td>
+               <td>120g crema inglesa</td>
+               <td>230g clara de huevos</td>
+               <td>1kg de chocolate medio-amargo</td>
+            </tr>
+            <tr>
+                <td>70g azucar</td>
+                <td>200g azucar</td>
+                <td>150g azucar</td> 
+                <td>230g chocolate blanco</td>
+                <td>48g agua</td>
+                <td>115g chocolate medio-amargo</td>
+                <td>450g azucar</td>
+            </tr>
+            <tr>
+                <td>70g harina</td>
+                <td>165g azucar</td>
+                <td>3g limón</td> 
+                <td>450g crema de leche</td>
+                <td>320g crema inglesa</td>
+                <td>180g crema de leche</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>1 vainilla en astilla</td>
+              <td></td> 
+              <td>4g gelatina sin sabor </td>
+              <td>480g leche</td>
+              <td>3g de gelatina sin sabor</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>16g agua </td>
+            <td></td>
+            <td>12g agua</td>
+          </tr>
+          </Table>
+            <img id="Bomba" src="bomba-alaska.jpg" alt="">
+            <div id="imagenes">
+              <img id="Mturron" src="mousse-de-turron-de-jijona-con-chocolate_50bd5e22_800x800.jpg" alt="">
+              <img id="charlotte" src="torta-charlotte.jpg" alt="">
+              <img id="limon" src="Torta-mousse-al-limone.png" alt="">
+            </div>
+            <h2 id="t3">Otros</h2>
+        </main>
+        <footer>
+            <h3>Cotacto</h3>
+            <p>telefono: 1234567890</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+    </html>

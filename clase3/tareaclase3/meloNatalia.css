@@ -1,0 +1,92 @@
+body{
+    display: grid;
+    grid-template-columns:70px 1200px 70px;
+    grid-row: auto;
+    grid-template-areas: 
+    ". h1 ."
+    ". boton ." 
+    ". t1 ."
+    ". b ."
+    ". p1 ."
+    ". imag ."
+    ". t .";
+    justify-content: center;
+    background-color: rgb(223, 209, 193);  
+
+    
+}
+#b{
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto;
+    grid-template-areas: 
+    " boton2 boton3";
+    justify-content: center;
+
+}
+.imag{
+    grid-area: imag;
+}
+
+#img1{
+    border: solid;
+    border-color: black;
+    width: 450px;
+    margin: 20px; 
+    padding: 5px;
+}
+#boton{
+    grid-area: boton;
+}
+#img2{
+    grid-area: img;
+    border: solid;
+    border-color: black;
+    padding: 5px;
+    margin: 20px;
+    width: 500px;
+}
+#t1{
+    grid-area: t1;
+    
+}
+#t2{
+    grid-area: t2;
+
+}
+#p1{
+    grid-area: b;
+    display: grid;
+    grid-template-columns: 500px 400px;
+    grid-row: auto;
+    grid-template-areas: 
+    "t2 t2"
+    "l .";
+    justify-content: center;
+
+}
+.lista{
+  grid-area: l;
+}
+.table{
+    grid-area: t;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+h1{
+    grid-area: h1;
+    font-size: 100px;
+    font-weight: 500px;
+}
+button{
+    color: black;
+
+}
+#boton2{
+    grid-area: boton2;
+}
+#boton3{
+    grid-area: boton3;
+}

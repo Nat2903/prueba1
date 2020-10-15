@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        body{
+            display: grid;
+            grid-template-columns:70px 1200px 70px;
+            grid-row: auto;
+            grid-template-areas: 
+            "nav nav nav" 
+            ". content ."
+            "foot foot foot";
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: content;
+            grid-area: content;
+            display: grid;
+            grid-template-columns:600px 600px;
+            grid-row: auto;
+            grid-template-areas: 
+            "img1 t1"
+            "img1 texto1"
+            "img2 texto2"
+            "img3 texto3"
+
+
+        }
+        footer{
+            grid-area: foot;
+            background-color: gainsboro;
+        }
+        #img1{
+            grid-area: img1;
+            width: 400px;
+        }
+        #img2{
+            grid-area: img2;
+            width: 400px;
+        }
+        #img3{
+            grid-area: img3;
+            width: 400px;
+        }
+        #texto1{
+            grid-area: texto1;
+        }
+        #texto2{
+            grid-area: texto2;
+        }
+        #texto3{
+            grid-area: texto3;
+        }
+        #t1
+        {
+            grid-area: t1;
+        }
+    </style>
+
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tartas.html">Pie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tortas.html">Tortas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mousse.html">Mousse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chefs.html">Chefs</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <main>
+            <h1 id="t1">Lo dulce de la vida</h1>
+            <p id="texto1">
+                La repostería es el arte de hacer la vida más dulce, apartir de pinceladas de azucar y tintes variados como la riqueza natural,que se funden en calor y frío para dar como resultado la mayor sensación de texturas y sabores, de una armonía tal, que es capáz de llevar al hombre a descubrir que la vida es mucho más que una simple cotidianidad.  Como en la vida, a veces sale bien y otras veces por pequeños errores sale mal, pero siempre hay una oportunidad para volver a intentarlo. La única ley cierta es no limitarse en los manuales, el verdadero límite es infinitamente extenso pues este es determinado por nuestra propia creatididad.
+
+            </p>
+            <p id="texto2">
+
+               A lo largo de toda la historia ha acompañado al hombre, desde la brioche de Maria Antonietta hasta los chocolates de Ernst Knam,desde el manjar turco de las Cronica de narnia hasta los beignets de la Princesa y el Sapo, desde el gelato hasta las fuentes de chocolate, desde el pan forte italiano hasta el arroz con leche español, la repostería siempre ha estado entre nosotros. Es adecuada para cuanquier ocasión no importa si es un postre casero o uno sofisticado, lo que importa es el sentido por el que se encuentra allí. No tiene una edad que la determine, desde chicos hasta abuelos se encantan con la magia creada por una simple pizca de amor. La tradición no es una barrera, al contrario, es su identidad pues a través de ella podemos conectarnos con nuestro pasado y construir nuestro futuro.
+
+            </p>
+            <p id="texto3">
+                Ahora es momento de ponerse el delantal y colocar en la mesa todos los componentes de tu paleta de sabores, es tiempo de darle rienda suelta de tú creatividad, moviendo el pincel con mucho amor, convirtiendo el cuadro en el más dulce pedacito de alegría.
+
+
+
+            </p>
+            <img id="img1" src="Utensilio-prin.jpg" alt="">
+            <img id="img2" src="arina.jpg" alt="">
+            <img id="img3" src="manga.jpg" alt="">
+        </main>
+        <footer>
+            <h3>Cotacto</h3>
+            <p>telefono: 1234567890</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+    </html>

@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        body{
+            display: grid;
+            grid-template-columns:70px 1200px 70px;
+            grid-row: auto;
+            grid-template-areas: 
+            "nav nav nav" 
+            ". content ."
+            "foot foot foot";
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: content;
+            display: grid;
+            grid-template-columns:600px 600px;
+            grid-row: auto;
+            grid-template-areas: 
+            "t1 t1"
+            "wh wh"
+            "t2 t2"
+            "t t"
+            "manzana texto1"
+            "lista texto3"
+            "t3 t3"
+            "imag imag";
+
+        }
+        footer{
+            grid-area: foot;
+            background-color: gainsboro;
+        }
+        #t3{
+          grid-area: t3;
+        }
+        #lista{
+            grid-area: lista;
+        }
+        #texto3{
+            grid-area: texto3;
+        }
+        #texto1{
+            grid-area: texto1;
+
+        }
+        #wh{
+            grid-area: wh;
+        }
+        #frutos{
+            grid-area: frutos;
+            width: 380px;
+        }
+        #limon{
+            grid-area: limon;
+            width: 330px;
+        }
+        #dur{
+            grid-area:dur;
+            width: 450px;
+        }
+        #manzana{
+            grid-area: manzana;
+            width: 450px;
+        }
+        #imag{
+            grid-area: imag;
+        }
+        #t1{
+            grid-area: t1;
+
+        }
+        #t2{
+            grid-area: t2;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tartas.html">Pie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tortas.html">Tortas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mousse.html">Mousse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chefs.html">Chefs</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <main>
+            <h1 id="t1">Pie</h1>
+            <div id="wh">
+                <h2 >¿Que es?</h2>
+                <p> 
+                    El pie es uno de los postres más reconocidos en todo el mundo. Según los historiadores el pie es un postre de origen inglés consumido desde la edad media en los banquetes ofrecidos por la reina Isabel. El más famoso es el pie de limón.
+                </p>
+            </div>
+            <h2 id="t2">Receta del día</h2>
+            <div id="texto1">
+            <h1>Pie de manzana</h1>
+            <p>
+                Esta es una de las recetas mas prácticas, sencillas y deliciosas que puenden hacerse. Para empezar haremos la masa de nuestro pie; para esto necesitaremos incorporar nuestra harina de trigo tamizada, el azucar y sal. Posteriormente se añade la mantequilla fría cortada en tubitos y se mezcla con el resto de la mezcla (puede ser a mano o con la batidora, lo importante es que la mantequilla no se desintegre por completo). En este punto se agrega el agua y el vinagra de manzana o frutos  (si no tienes ninguno de estos tipos de vinagre lo puedes remplazar por la misma cantidad de agua) y se integra todo deteniendose un poco antes de que se integre por completo.Dividiremos nuestra masa en dos partes iguales, las envolveremos en papel vinipel y las dejaremos conservando en la nevera por lo menos 2 horas.
+
+            </p>
+            </div>
+
+            <img id="manzana" src="pie manzana.jpg" alt="">
+            <div id="imag">
+            <img id="frutos" src="https://cdn.kiwilimon.com/recetaimagen/27522/27232.jpg" alt="">
+            <img id="limon" src="62ed8aa84276d5b9474f551d431842034a796d0a-pielimon.jpeg" alt="">
+            <img id="dur" src="dur.jpg" alt="">
+            </div>
+            <div id="lista">
+            <ul id="lis1" class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-item">masa </a>
+                  </li>
+              <a class="nav-item">- 400g harina </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item">- 20g azucar </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item">- 260g mantequilla </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item">- 30ml vinagre de manzana/frutas </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item">-80ml Agua helada </a>
+              </li>
+        </ul>
+             
+             
+             
+        <ul id="lis2" class="navbar-nav mr-auto">    
+             
+              <li class="nav-item">
+                <a class="nav-item">Relleno</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item">-4-6 manzanas </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item">- 6cda zumo de limón</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item">- 3/4 cda de canela en polvo </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item">- 1/4 cda de nuez moscada </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item">- 140g azucar</a>
+              </li>
+        </ul>
+
+    </div>
+    <p id="texto3">
+        Para el relleno necisitamos picar las manzanas finamente y dejarlas conservar con el zumo de limon por unos 20 minutos. posteriormente agregamos la nuez moscada, la canela y el azucar (si prefieres puedes tambien agregarle 1/cdta de gengibre en polvo o 1cda de maizena que le da un poco de más textura). Dejas reposar mientras estiras la masa, la pones en tú molde para pies y inchas con un tenedor la base de tu masa. Después de tener el molde listo con la masa agregas tu relleno y con la masa que te queda puedes hacer tiras y entrecruzarlas para la decoración superior, si haces esto tienes que pintar la masa con una mezcla de huevo y leche. Lo llevas al horno por aproximadamente una hora a 190 grados.
+
+    </p>
+    <h2 id="t3">Otros</h2>
+        </main>
+        <footer>
+            <h3>Cotacto</h3>
+            <p>telefono: 1234567890</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+    </html>

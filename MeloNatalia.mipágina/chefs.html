@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns:70px 1200px 70px;
+            grid-row: auto;
+            grid-template-areas: 
+            "nav nav nav" 
+            ". content ."
+            "foot foot foot";
+            justify-content: center;
+
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: content;
+            display: grid;
+            grid-template-columns:500px 200px 500px;
+            grid-row: auto;
+            grid-template-areas: 
+            "t1 t1 t1"
+            "Beca textoB textoB " 
+            "textok textok Knam"
+            "Mark textoM textoM ";
+            justify-content: center;
+
+        }
+        footer{
+            grid-area: foot;
+            background-color: gainsboro;
+        }
+        #Beca{
+            grid-area: Beca;
+        }
+        #Mark{
+            grid-area: Mark;
+            width: 400px;
+        }
+        #imagen{
+            grid-area: Knam;
+            width: 400px;
+            justify-content: right;
+        }
+        #textoM{
+            grid-area: textoM;
+            background-color: wheat;
+            border-radius: 10px;
+        }
+        #textoB{
+            grid-area: textoB;
+            background-color: wheat;
+            border-radius: 10px;
+
+        }
+        #knam{
+            background-color:wheat;
+            grid-area: textok;
+
+
+        }
+        #t1{
+            width: 900px;
+            grid-area: t1;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tartas.html">Pie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tortas.html">Tortas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mousse.html">Mousse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chefs.html">Chefs</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <main>
+            <h1 id="t1"> ¿Quienes son los artistas?</h1>
+            <div id="textoB">
+                <h2>  Beca Milano</h2>
+                <p>
+                 Beca Milano es un mujer dulce como cada una de sus preparaciones, que no se rinde ante las adversidades, al contrario, lucha por obtener una sonrrisa. Su vida como repostera empezó desde que era muy pequeña, con su madre hacían tortas para mantener sus estudios. Su primera carrera fue de framaceútica, pero su pasión por la repostería no podía parar así de repente. Tras haber entrado en la vida de la gastronomía nadie pudo sacarla, dejó su trabajo y se adentro en el mundo de los dulces. Sus preparación no se detuvieron y la llevaron a ser lo que es ahora, la repostera más conocida en todo Brasil. Sus participaciones en varios programas de tv hacen ver la inmensa capacidad que Beca tiene y que en verdad la gratidud de su trabajo no se da con dinero, si no con una sonrrisa, pues ella entra en la historia de su cliente para hacer la torta que llene en el fondo al ser humano que tiene en frente. Y justamente por eso uno de sus lemas es :“Um bom doce é aquele que arranca um sorriso. Sempre observo a reação das pessoas quando provam um doce que fiz. Se elas sorriem, a receita é boa”(tomado de food service news)
+
+        
+             </p>
+            </div> 
+            <img id= Beca src="Beca Milano.jpg" alt="Beca Milano">
+
+
+            <div id="textoM">
+               <h2>Mark Rausch</h2>
+               <p>
+                   Mark hace parte del grupo de los hermanos Rausch, una familia donde la gastronomía y la repostería reinan después del amor. Y justamente esto fue el insentivo que llevo a Mark a adentrarse en el mundo de la repostería, pues él es el único en su familia que se dedica a lo dulce. Como todo Rusch, Mark es serio al momento de una cata pero cuando habla de los sabores nacinales o de su profeción en general la sonrrisa, que en repetidas ocaciones intenta disimilar, invade su cara haciendo ver que el dulce es todo para él, porque lo representa a él mismo. Estudió repostería en Canadá y tras varios años de esfuerzos junto a sus hermanos, se convirtió en el mejor repostero de Colombia.
+
+               </p>
+
+            </div>
+     
+            <img id="Mark" src="Mark Rausch 2.jpg" alt="">
+            <div id="Knam">
+                <h2>Ernst Knam</h2>
+                <p>
+                    Ernst Knam es uno de los reposteros más reconocidos en todo el mundo no solo por los programas en los que ha participado, ni por la cantidad de concursos en los que ha quedado casi siempre en primer puesto, si no por su abilidad y creatividad en la cocina. Claramente su ingrdiente preferido es el chocolate, con el que convive, dentro y fuera del restaurante, todos los días.Y justamente esto es lo más interesante, él es como el chocolate, el aspecto de su cara es dura, seria y muy fría, pero en el fondo tiene un corazon que intenta resistir, pero que ante el calor de la gente se derrite y solo quiere hacerlos feliz. Muchos piensan que él es italiano, y en verdad es como si lo fuera, pero en realidad este repostero de 56 años es Alemán, de una familia humilde, pero que desde siempre le inculcó el amor a su gran pasión: La cocina.
+
+                </p>
+
+            </div>
+            <img id= imagen src="knam-experience.jpg" alt="Knam">
+        </main>
+        <footer>
+            <h3>Cotacto</h3>
+            <p>telefono: 1234567890</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+    </html>

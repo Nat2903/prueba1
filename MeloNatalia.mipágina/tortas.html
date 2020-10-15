@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        body{
+            display: grid;
+            grid-template-columns:70px 1200px 70px;
+            grid-row: auto;
+            grid-template-areas: 
+            "nav nav nav" 
+            ". content ."
+            "foot foot foot";
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: content;
+            display: grid;
+            grid-template-columns:600px 600px;
+            grid-row: auto;
+            grid-template-areas: 
+            "t1 t1"
+            "wh wh"
+            "t2 t2"
+            "t t"
+            "opera topera"
+            "lista texto3"
+            "t3 t3"
+            "imagenes imagenes"
+        }
+        footer{
+            grid-area: foot;
+            background-color: gainsboro;
+        }
+        #t3{
+          grid-area: t3;
+        }
+        #opera{
+            grid-area: opera;
+            width: 500px;
+        }
+        #t2{
+            grid-area: t2;
+        }
+        #topera{
+            grid-area: topera;
+
+
+        }
+        #imagenes{
+            grid-area: imagenes;
+        }
+        #tortaf{
+            grid-area: tfrutos;
+            width: 400px;
+        }
+        #cinnamon{
+            grid-area: cinnamon;
+            width: 300px;
+        }
+        #wh{
+            grid-area: wh;
+        }
+        #t1{
+            grid-area: t1;
+        }
+        #coco{
+            grid-area: coco;
+            width: 350px;
+        }
+        #lista{
+            grid-area: lista;
+
+        }
+        #lis1{
+            grid-area: lis1;
+        }
+        #lis3{
+            grid-area: lis2;
+        }
+        #lis2{
+            grid-area: lis3;
+        }
+        #texto3{
+            grid-area: texto3;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tartas.html">Pie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tortas.html">Tortas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mousse.html">Mousse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="chefs.html">Chefs</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <main>
+            <h1 id="t1">Tortas</h1>
+            <div id="wh">
+                <h2 >¿Que es?</h2>
+                <p> 
+                    La primera señal de torta se dió hace más de siete mil años, en Mesopotamia de Egipto, donde se iniciaron a crear panes de miel con ajonjolí. Es muy curiosa que es el tipo de postre mayor consumido, ya que no en todos sus casos es el más facil de cocinar. Sus masas son su identidad, y las combinaciones no tienen ninguna norma, solo que esté lleno de mucha personalidad.
+                </p>
+            </div>
+            <h2 id="t2">Receta del día</h2>
+            <div id="topera">
+            <h2>Torta Ópera</h2>
+
+            <p>  
+                Empezaremos haciendo la torta de almendras. Uniremos el azucar en polvo y la harina de almendras tamizadas,luego incorporaremos los huevos y batiremos furtemente. Batiremos las claras de huevo a punto de nieve junto con la sal y el azucar, posteriormente a la mezcla anterior le mezclaremos suavemente la harina de trigo y luego le incorporaremos poco a poco las claras. Vamos a poner el contenido en una lata dejandolo de espesor de 1,5cm y lo meteremos en el horno a 200 grados por mas o menos 8 o 10 minutos. Mientrastanto pondremos a calentar la leche ,para la Ganache, que luego pondremos encima del chocolate. Eperaremos un minuto y revolveremos hasta tener una mezcla completamente omogenea.
+
+            </p>
+            </div>
+            <div id="lista">
+                <ul id="lis1" class="navbar-nav mr-auto">
+
+                    <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-item">torta </a>
+                          </li>
+                      <a class="nav-item">- 5 huevos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item">- 140g almendras </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">-140g azucar en polvo </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 30g azucar </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">-30g de mantequilla en cubos </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">-1g de sal </a>
+                      </li>
+                </ul>
+                     
+                     
+                     
+                <ul id="lis2" class="navbar-nav mr-auto">    
+                     
+                      <li class="nav-item">
+                        <a class="nav-item">Butercream de café</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 5 llemas de huevo </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 150g de azucar </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 45ml de agua </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 4g de café instantaneo </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 280g de mantequilla</a>
+                      </li>
+                </ul>
+    
+    
+    
+    
+                <ul id="lis3" class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-item">chocolate Glaze </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 200g chocolate medio-amargo </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 30ml aceite </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">Ganache de chocolate </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 160g crema de leche batida</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-item">- 160g chocolate semi-amrgo</a>
+                      </li>
+
+                  </ul>
+
+            </div>
+            <img id="opera" src="receta-tarta-opera_223_1.jpg" alt="">
+            <div id="imagenes">
+            <img id="cinnamon" src="https://tartademanzanacasera.files.wordpress.com/2015/04/dsc04339.jpg?w=640&h=480" alt="">
+            <img id="tortaf" src="TORTA DE VAINILLA Y FRUTOS R.jpg" alt="">
+            <img id="coco" src="arequipe y coco.jpg" alt="">
+            </div>
+            <p id="texto3">
+                Luego pasaremos a la Buttercream de café, para el que hiniciaremos poniendo a temperatura medio-baja una olla que tendrá el azucar, el agua y el café hasta que llegue a unos 115 grados aproximadamente. Mientras que esto sucede batiremos levemente las llemas de huevo. Al estar listo lo incorporaremos ,batiendo con la batidora, poco a poco en las llemas hasta formar una crema de color claro y gruesa textura. En ese momento incorporaremos de tres en tres los cubitos de mantequilla. Para montar pondremos un pedazo de torta (la torta deve cortarse en 3 pedazos iguales) que mojaremos con una solución de agua azucar y café,y lugo pondremos una capa de crema de café, posteriormente se pondrá otra capa de torta, se mojara y se pongra la Ganache y el procedimiento se reperirá una vez má con la crema de café. En este momento se hace el chocolate Glaze, derritiendo el chocolate y añadiéndole el aceite. Finalmente esta última preparación se riega sobre nuertra torta y...vua la !! Nuestra torta ópera está lista. 
+
+            </p>
+            <h2 id="t3">Otros</h2>
+
+
+        </main>
+        <footer>
+            <h3>Cotacto</h3>
+            <p>telefono: 1234567890</p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+    </html>
