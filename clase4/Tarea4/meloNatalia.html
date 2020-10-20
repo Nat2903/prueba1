@@ -4,19 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tabla de tareas</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns:300px 500px 300px;
+            grid-row: auto;
+            grid-template-areas: 
+            ". h1 ." 
+            "materia text1 ."
+            "des text2 ."
+            "data text3 boton"
+            ". tabla .";
+            justify-content: center;
+        }
+        h1{
+            grid-area: h1;
+        }
+        #materia{
+            grid-area: materia;
+        }
+        #des{
+            grid-area: des;
+        }
+        #data{
+            grid-area: data;
+        }
+        #boton{
+            grid-area: boton;
+        }
+        #text1{
+            grid-area: text1;
+        }
+        #text2{
+            grid-area: text2;
+         }
+        #text3{
+            grid-area: text3;
+        }
+
+    </style>
 </head>
 <body>
     <h1> Tabla de Tareas</h1>
-    <textarea name="texto" id="text2" cols="30" rows="10"></textarea>
-        <input id="inputAdd" type="text1">
+    <h2 id="materia">Materia </h2>
+    <input id="text1" type="text">
+    <h2 id="des"> Descripción</h2>
+    <textarea name="texto" id= "text2" cols="30" rows="10"></textarea>
+    <h2 id="data">Fecha </h2>
+    <input id="text3" type="text">
 
-        <input id="inputAdd" type="text3">
 
+    <button id="boton">Añadir</button>
 
+    <table id="tabla">
+        <tr>
 
-    <button>Añadir</button>
-
-    <table id="tabla"> </table>
+        </tr> 
+    </table>
     <script src="melo.Natalia.js"></script>
 </body>
 </html>

@@ -54,6 +54,7 @@ function hacerTabla() {
     fila.appendChild(tdFecha);
 
     // Añado la fila a la tabla
+    
     tabla.appendChild(fila);
   }
 }
