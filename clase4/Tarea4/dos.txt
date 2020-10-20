@@ -1,0 +1,22 @@
+Clase 5
+1.       Instalar Git al computador
+2.       Iniciar sesión en Github
+3.       Hacer un archivo en visual
+4.       Abrir la terminal
+-          Git init : para indicarle a git que la carpeta actual será un repositorio, los archivos que se guarden ahí deberian mantener el historial de versiones
+-          Git add . : Le dice a git que añada todos los archivos para ser incluidos en el siguiente commit.( commit: foto de los archivos en ese momento)
+-          git commit -m "Mensaje para mi yo del futuro" : Saca la “foto del archivo “ y se pone un mensaje para que yo me acuerde para qué lo hice
+-          git log:
+è  HEAD> donde estamos en este momento
+-          git checkout nombregitquequierover  : me muestra el contenido en ese archivo
+-          git master: vuelve al actual
+è  Master : es lo que ve el usuario
+è  Yo puedo ir editando en una rama aparte que no me afecte la publicada y después si me gusta unirla o cambiarla a la que ve el usuario.
+5. 	En github creo un nuevo repositorio y lo publico  y le doy crear el repositorio
+6.     Debo unir git con github:
+-         
+  
+7.       Voy al terminal
+-          Git remote add
+-          git push master
+
