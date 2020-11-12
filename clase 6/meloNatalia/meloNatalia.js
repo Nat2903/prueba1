@@ -1,9 +1,9 @@
-
 let text1 = document.querySelector("#text1");
 let text2 = document.querySelector("#text2");
 let text3 = document.querySelector("#text3");
 let tabla = document.querySelector("#tabla");
 let boton = document.querySelector("#boton");
+
 function addHeaders() {
     let fila = document.createElement("tr");
     let enc1 = document.createElement("th");
@@ -19,9 +19,12 @@ function addHeaders() {
      tabla.appendChild(fila);
     
   }
-  let vfila = JSON.parse(window.localStorage.getItem("vfila"));
-  if(vfila == null) vfila = [];
+  let vfila = JSON.parse(window.localStorage.getItem("tarea"));
+  if(vfila == null)
+  {
+    vfila = [];
 
+  } 
   function hacerTabla()
 {  
   tabla.innerHTML = "";  
@@ -50,13 +53,13 @@ tabla.appendChild(fila);
 }
   vfila.push(tareas);
   hacerTabla();
+  window.localStorage.setItem("tarea", JSON.stringify(vfila));
   
   //Borrar lo que el usuario escribio
-  tareas.value = "";
+  tareas.value = " ";
 }
  boton.onclick = addItem;
  hacerTabla();
  addItem();
 
  
-
